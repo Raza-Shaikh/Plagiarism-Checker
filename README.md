@@ -36,28 +36,29 @@ Upload two documents (supports `.txt`, `.docx`, and `.pdf`) and instantly see th
 ## 📦 Installation (Local Setup)
 
 1. Clone the repository:
-   git clone https://github.com/Raza-Shaikh/Plagiarism-Checker.git
-   
+
+   git clone https://github.com/Raza-Shaikh/Plagiarism-Checker.git  
    cd Plagiarism-Checker
 
+2. Install dependencies:
 
-3. Install dependencies:
    pip install -r requirements.txt
 
-4. Run the Flask app:
+3. Run the Flask app:
+
    python app.py
 
 ---
 
-## 📁 File Structure:
-Plagiarism-Checker/
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-├── demo1.txt
-├── demo2.txt
-├── app.py
-├── requirements.txt
-├── render.yaml
+## 📁 File Structure
+
+Plagiarism-Checker/  
+├── templates/  
+│   ├── index.html  
+│   └── result.html  
+├── demo1.txt  
+├── demo2.txt  
+├── app.py  
+├── requirements.txt  
+├── render.yaml  
 └── README.md
