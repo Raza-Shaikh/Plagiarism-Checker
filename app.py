@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -25,5 +26,8 @@ def compare_files():
 
     return render_template('result.html', similarity=round(similarity_score * 100, 2))
 
-if __name__ == '__main__':
-    app.run(debug=True)
+import os
+
+port = int(os.environ.get("PORT", 10000))  # Default to 10000 if PORT not set
+app.run(host="0.0.0.0", port=port)
+
